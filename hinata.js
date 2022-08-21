@@ -1462,7 +1462,7 @@ break
 	        case 'tiktok': case 'tiktoknowm': {
                 if (!text) throw 'Masukkan Query Link!'
                 m.reply(mess.wait)
-                let anu = await fetchJson(`https://api-xriy04.herokuapp.com/api/tiktok?url=${text}`)
+                let anu = await fetchJson(`https://www.tiktok.com/@tiktok/video/6800111723257941253=${text}`)
                 let buttons = [
                     {buttonId: `tiktokwm ${text}`, buttonText: {displayText: '► With Watermark'}, type: 1},
                     {buttonId: `tiktokmp3 ${text}`, buttonText: {displayText: '♫ Audio'}, type: 1}
